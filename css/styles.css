@@ -521,5 +521,50 @@ fill: #2F2F37;
 @media screen and (min-width: 768px) {
 .goals-list {
     flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-direction: row;
+}
+
+.goals-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.goals-subtitle {
+    justify-content: start;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.goals-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+}
+
+.goals-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.goals-list {
+    gap: 24px;
+}
+
+.goals-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.goals-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 }
