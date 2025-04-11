@@ -13,56 +13,6 @@
 
 
 
-/* hero */
-
-.hero {
-background-color: rgba(46, 47, 66, 0.7);
-background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-rgba(46, 47, 66, 0.7)),
-url(../images/hero-background.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-margin: 0 auto;
-max-width: 1440px;
-color: #fff;
-padding: 188px 0;
-}
-
-
-.hero-title {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        max-width: 496px;
-        margin: 0 auto 48px;
-}
-
-.hero-title-btn {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
-        background-color: #4d5ae5;
-        border: none;
-        border-radius: 4px;
-        display: block;
-        margin: 0 auto;
-        padding: 16px 32px;
-        min-width: 169px;
-        height: 56px;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-title-btn:hover,
-.hero-title-btn:focus {
-    background: #404bbf;
-}
-
 /* goals */
 
 .goals-icon {
