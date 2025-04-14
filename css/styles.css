@@ -198,6 +198,11 @@ fill: #2F2F37;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-menu-link.current,
+.menu-contacts-link.current {
+    color: #404bbf;
+}
+
 .nav-menu-link:hover,
 .nav-menu-link:focus,
 .menu-contacts-link:hover,
@@ -275,6 +280,14 @@ fill: #2F2F37;
     padding: 72px 0;
 }
 
+@media screen and (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Hero/hero-background-mob-2x.jpg);
+    }
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 36px;
@@ -308,14 +321,6 @@ fill: #2F2F37;
     background: #404bbf;
 }
 
-@media screen and (min-resolution: 2x) {
-    .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/Hero/hero-background-tab-2x.jpg);
-    }
-}
-
 /* Goals */
 
 .goals-icon {
@@ -335,13 +340,12 @@ fill: #2F2F37;
     line-height: 1.12;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin-bottom: 8px;
 }
 
 .goals-text {
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -491,9 +495,8 @@ fill: #2F2F37;
 
 .footer-logo {
     margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
 }
 
 .footer-soc-text {
@@ -503,9 +506,8 @@ fill: #2F2F37;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 
 .color-change-link:hover,
@@ -524,9 +526,8 @@ fill: #2F2F37;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     margin-bottom: 16px;
 }
 
@@ -801,6 +802,7 @@ fill: #2F2F37;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     display: inline-flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -813,6 +815,11 @@ fill: #2F2F37;
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
+}
+
+.modal-check-text {
+    display: flex;
+    align-items: center;
 }
 
 .comment {
@@ -925,7 +932,7 @@ fill: #2F2F37;
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/Hero/hero-background-mob-2x.jpg);
+            url(../images/Hero/hero-background-tab-2x.jpg);
     }
 }
 
@@ -948,7 +955,7 @@ fill: #2F2F37;
 }
 
 .goals-subtitle {
-    justify-content: start;
+    text-align: left;
 }
 
 .team-list {
@@ -972,17 +979,19 @@ fill: #2F2F37;
 
 .footer-content {
     max-width: 264px;
+    margin: 0;
+}
+
+.footer-container {
+    padding: 0 108px;
 }
 
 .footer-wrapper {
     display: flex;
     flex-direction: row;
-    padding-left: 108px;
+    padding: 0;
+    gap: 24px;
     margin-bottom: 72px;
-}
-
-.footer-content {
-    margin-right: 24px;
 }
 
 .footer-soc-container {
@@ -992,11 +1001,7 @@ fill: #2F2F37;
 .footer-logo,
 .footer-soc-text,
 .subscribe-text {
-    justify-content: start;
-}
-
-.footer-subscribe {
-    padding-left: 108px;
+    text-align: left;
 }
 
 .footer-form {
@@ -1094,6 +1099,7 @@ fill: #2F2F37;
 }
 
 .goals-text {
+    font-weight: 400px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1168,6 +1174,7 @@ fill: #2F2F37;
 }
 
 .footer-container {
+    padding: 0 15px;
     display: flex;
     align-items: baseline;
 }
